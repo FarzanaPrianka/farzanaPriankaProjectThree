@@ -18,6 +18,8 @@
  */
 
 $(document).ready(function() {
+  //Our recent work section-----------------------------------
+
   let slideIndex = 1;
   let captionText = [
     "Lorem Museum",
@@ -75,8 +77,6 @@ $(document).ready(function() {
     console.log("clicked");
   });
 
-  //
-
   //declare a function
 
   function slideShow(num) {
@@ -118,7 +118,7 @@ $(document).ready(function() {
       }
     });
 
-    //thumbnail image opacity control
+    //thumbnail image style control
 
     thumbnailImage.each(function() {
       $(this).removeClass("hoverMe");
@@ -132,4 +132,34 @@ $(document).ready(function() {
 
     caption.html(captionText[slideIndex - 1]);
   }
+
+  //contact us section....
+
+  $("form").on("submit", function(event) {
+    event.preventDefault();
+
+    //store the input in variables
+    let userName = $("input.yourName:text").val();
+    let userEmail = $("input[name='mail']").val();
+
+    //if there is text
+    if (userName !== "" && userEmail !== "") {
+      //form disappears
+      $(this).css("display", "none");
+      //display message pop up
+      $(".displayText").text(
+        "Thank you " +
+          userName +
+          " for the subscription.Our brochure is on its way to your email address " +
+          userEmail
+      );
+    } else if (userName == "" || userEmail == "") {
+      console.log("please enter required fields");
+      $(".requiredFields").text("please enter required fields");
+    }
+  });
+
+  //clear the feilds
+  $("input.yourName:text").val("");
+  $("input[name='mail']").val("");
 });

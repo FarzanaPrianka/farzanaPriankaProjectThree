@@ -1,63 +1,26 @@
 @import "setup";
 @import "commonDesign";
+@import "ourRecentWork";
 
-//Section: Our Recent Works
-
-.slidesContainer {
-  position: relative;
-
-  border: 1px solid blue;
+.formContainer {
+  // max-width: 300px;
+  // padding: 10px;
+  border: 1px solid red;
 }
 
-.slides {
-  //
-
-  display: none;
+.form-container textarea {
+  width: 100%;
+  // padding: 15px;
+  // margin: 5px 0 22px 0;
+  // border: none;
+  // background: #f1f1f1;
+  // resize: none;
+  // min-height: 200px;
 }
 
-.previous,
-.next {
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 20px;
-  //   margin-top: -50px;
-  color: black;
-  //   font-weight: bold;
-  font-size: 30px;
-  //   border-radius: 0 3px 3px 0;
-}
-
-.next {
-  right: 0;
-  //   border-radius: 3px 0 0 3px;
-}
-
-.previous:hover,
-.next:hover {
-  background-color: pink;
-}
-
-.imageCaptionContainer {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.thumbnailRow {
-  display: flex;
-}
-
-.thumbnailColumn {
-  width: 20%;
-}
-
-.thumbnailImage {
-  opacity: 0.5;
-}
-
-.hoverMe,
-.thumbnailImage:hover {
-  opacity: 1;
+input[type="text"],
+input[type="email"] {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid black;
 }

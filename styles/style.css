@@ -276,7 +276,6 @@ img {
 
 .slidesContainer {
   position: relative;
-  border: 1px solid blue;
 }
 
 .slides {
@@ -326,4 +325,19 @@ img {
 .hoverMe,
 .thumbnailImage:hover {
   opacity: 1;
+}
+
+.formContainer {
+  border: 1px solid red;
+}
+
+.form-container textarea {
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"] {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid black;
 }
