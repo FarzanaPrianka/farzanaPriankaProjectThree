@@ -4,7 +4,94 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- font awesome -->
+
+    <script
+      src="https://kit.fontawesome.com/35ca208e9c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <title>Project Three</title>
   </head>
-  <body></body>
+  <body>
+    <!-- why choose us section -->
+
+    <section>
+      <!-- container for the gallery images -->
+
+      <div class="slidesContainer">
+        <!-- images -->
+
+        <div class="slides">
+          <img src="styles/images/slideshow1.jpg" alt="a glass house" />
+        </div>
+        <div class="slides">
+          <img
+            src="styles/images/slideshow2.jpeg"
+            alt="a house with reflection"
+          />
+        </div>
+        <div class="slides">
+          <img
+            src="styles/images/slideshow3.jpeg"
+            alt="a sophisticated house"
+          />
+        </div>
+        <div class="slides">
+          <img src="styles/images/slideshow4.jpeg" alt="a living room" />
+        </div>
+       
+        <div class="slides">
+          <img src="styles/images/slideshow5.webp" alt="a living room" />
+        </div>
+      </div>
+
+      <!-- previous icon and next icon -->
+      
+        <a class = 'previous' href="#"><i class="fas fa-arrow-left"></i></a>
+    
+        <a class='next' href="#"><i class="fas fa-arrow-right"></i></a>
+      
+
+      <!-- Image caption -->
+
+      <div class="imageCaptionContainer">
+        <p class="imageCaption"></p>
+      </div>
+
+      <!-- thumbnail images -->
+
+      <div class="thumbnailRow">
+
+        <div class="thumbnailColumn">
+          <img src="styles/images/slideshow1.jpg" class="thumbnailImage one"
+          alt="a glass house" />
+        </div>
+        <div class="thumbnailColumn">
+          <img src="styles/images/slideshow2.jpeg" class="thumbnailImage two"
+          alt="a house with reflection" />
+        </div>
+        <div class="thumbnailColumn">
+          <img src="styles/images/slideshow3.jpeg" 
+          class="thumbnailImage three"
+          alt="a sophisticated house" />
+        </div>
+        <div class="thumbnailColumn">
+          <img src="styles/images/slideshow4.jpeg" class="thumbnailImage four" alt="a living room" />
+        </div>
+      
+        <div class="thumbnailColumn">
+          <img class="thumbnailImage five" src="styles/images/slideshow5.webp" alt="a living room" />
+        </div>
+      </div>
+
+        
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="projectThree.js"></script>
+  </body>
 </html>

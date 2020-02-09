@@ -1,1 +1,63 @@
 @import "setup";
+@import "commonDesign";
+
+//Section: Our Recent Works
+
+.slidesContainer {
+  position: relative;
+
+  border: 1px solid blue;
+}
+
+.slides {
+  //
+
+  display: none;
+}
+
+.previous,
+.next {
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 20px;
+  //   margin-top: -50px;
+  color: black;
+  //   font-weight: bold;
+  font-size: 30px;
+  //   border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  //   border-radius: 3px 0 0 3px;
+}
+
+.previous:hover,
+.next:hover {
+  background-color: pink;
+}
+
+.imageCaptionContainer {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.thumbnailRow {
+  display: flex;
+}
+
+.thumbnailColumn {
+  width: 20%;
+}
+
+.thumbnailImage {
+  opacity: 0.5;
+}
+
+.hoverMe,
+.thumbnailImage:hover {
+  opacity: 1;
+}
