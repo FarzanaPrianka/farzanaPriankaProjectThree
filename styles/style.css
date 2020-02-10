@@ -269,9 +269,67 @@ template {
   overflow: hidden;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   display: block;
   width: 100%;
+}
+
+header {
+  height: 100vh;
+  background-image: url(images/backgroundImageInitialPage.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  width: auto;
+  margin: 0 auto;
+  padding: 200px 0 100px;
+  font-family: "Lora", serif;
+  color: white;
+  text-align: center;
+  font-size: 100px;
+}
+
+p.beginArrow {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fa-arrow-down {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  color: orangered;
+  padding: 200px 0 20px;
+}
+
+.begin {
+  font-family: "Roboto", sans-serif;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+section.introduction {
+  height: 100vh;
+  background-image: url(images/backgroundImageInitialPage.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: none;
 }
 
 .slidesContainer {

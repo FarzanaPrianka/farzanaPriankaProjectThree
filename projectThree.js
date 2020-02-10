@@ -18,6 +18,51 @@
  */
 
 $(document).ready(function() {
+  //initial landing page
+
+  $(".beginArrow").on("click", function() {
+    //$("header").fadeOut("slow", "swing");
+    //$(".introduction").fadeIn("slow", "swing");
+
+    $(".begin").text("Take me there");
+
+    //$(".begin").text("Take me there");
+
+    console.log("clicked");
+  });
+
+  //Introduction Page----------------------------------------------
+
+  //when mouseover the icon
+
+  let whyChooseUsIcon = $("a.whyChooseUsIcon");
+  let destination = ["USA", "Canada", "Thailand", "Nepal"];
+
+  whyChooseUsIcon.each(function(index) {
+    $(this).on("mouseover", function() {
+      $("p.reasonHeading").text(destination[index]);
+    });
+    $(this).on("mouseout", function() {
+      $("p.reasonHeading").text("");
+    });
+  });
+
+  //takeMeThere
+
+  $("a.takeMeThere").on("click", function() {
+    $("section.introduction").fadeOut("slow", "swing");
+    console.log("clicked");
+  });
+
+  //display relevant text
+
+  //.......................
+
+  let usa = $("li.usa");
+  usa.on("click", function() {
+    console.log("clicked usa");
+  });
+
   //Our recent work section-----------------------------------
 
   let slideIndex = 1;
@@ -76,8 +121,6 @@ $(document).ready(function() {
     slideShow(slideIndex);
     console.log("clicked");
   });
-
-  //declare a function
 
   function slideShow(num) {
     //select all "div element" of class "slides" and store it to a variable named "slides"
