@@ -18,27 +18,29 @@
  */
 
 $(document).ready(function() {
-  //initial landing page
+  //initial landing page appear
+  //when click on the arrow the full landing page disappear and introduction page pop up.
 
   $(".beginArrow").on("click", function() {
-    //$("header").fadeOut("slow", "swing");
-    //$(".introduction").fadeIn("slow", "swing");
+    $(".fullLandingImage").fadeOut("slow", "swing");
+    $(".introduction").fadeIn("slow", "swing");
 
-    $(".begin").text("Take me there");
+    //$(".begin").fadeOut(1200, function() {
+    //   $(".begin").text("Take me there");
+    //  $(".begin").fadeIn("fast");
+    //});
 
     //$(".begin").text("Take me there");
 
     console.log("clicked");
   });
 
-  //Introduction Page----------------------------------------------
-
   //when mouseover the icon
 
-  let whyChooseUsIcon = $("a.whyChooseUsIcon");
+  let destinationIcon = $("a.destinationIcon");
   let destination = ["USA", "Canada", "Thailand", "Nepal"];
 
-  whyChooseUsIcon.each(function(index) {
+  destinationIcon.each(function(index) {
     $(this).on("mouseover", function() {
       $("p.reasonHeading").text(destination[index]);
     });
@@ -51,6 +53,8 @@ $(document).ready(function() {
 
   $("a.takeMeThere").on("click", function() {
     $("section.introduction").fadeOut("slow", "swing");
+    $("section.destination").fadeIn("slow", "swing");
+
     console.log("clicked");
   });
 

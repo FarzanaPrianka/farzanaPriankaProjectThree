@@ -8,8 +8,8 @@
 
 .previous,
 .next {
-  position: absolute;
-  top: 40%;
+  //position: absolute;
+  //top: 40%;
   width: auto;
   padding: 20px;
   //   margin-top: -50px;
@@ -26,7 +26,7 @@
 
 .previous:hover,
 .next:hover {
-  background-color: pink;
+  background-color: grey;
 }
 
 .imageCaptionContainer {

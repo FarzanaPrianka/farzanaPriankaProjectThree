@@ -1,8 +1,75 @@
-section.introduction {
-  height: 100vh;
-  background-image: url(images/backgroundImageInitialPage.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: none;
+div.wrapper.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2.introduction {
+  width: auto;
+  margin: 0 auto;
+  padding: 100px 0 60px;
+  font-family: $primaryFont;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+p.introDetail {
+  font-family: $secondaryFont;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+p.reasonHeading {
+  color: white;
+  font-family: $secondaryFont;
+  font-size: 20px;
+}
+
+//destination icon
+
+a.destinationIcon {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  padding: 200px 50px 20px;
+}
+
+div.destination {
+  text-align: center;
+  padding-top: 100px;
+}
+
+//arrow icon
+
+p.takeMeThereContainer {
+  text-align: center;
+}
+
+p.takeMeThere {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.fa-arrow-down.two {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  color: red;
+  padding: 200px 0 20px;
+}
+
+.takeMeThereText {
+  font-family: $secondaryFont;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  transition: all 0.7s;
 }
