@@ -328,6 +328,10 @@ p.beginArrow {
   transition: all 0.7s;
 }
 
+section.introduction {
+  display: none;
+}
+
 div.wrapper.introduction {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,6 +435,10 @@ ul.destination {
   font-size: 30px;
 }
 
+section.galleryUSA {
+  display: none;
+}
+
 .slidesContainer {
   position: relative;
 }
@@ -480,6 +488,18 @@ ul.destination {
 .hoverMe,
 .thumbnailImage:hover {
   opacity: 1;
+}
+
+p.brochureText {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: red;
+}
+
+section.message {
+  display: none;
+  padding-top: 100px;
 }
 
 .formContainer {

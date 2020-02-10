@@ -49,22 +49,24 @@ $(document).ready(function() {
     });
   });
 
-  //takeMeThere
+  //when click takeMeThere gallery shows up
 
   $("a.takeMeThere").on("click", function() {
     $("section.introduction").fadeOut("slow", "swing");
-    $("section.destination").fadeIn("slow", "swing");
+    //$("section.destination").fadeIn("slow", "swing");
+    $("section.galleryUSA").fadeIn("slow", "swing");
 
     console.log("clicked");
   });
 
-  //display relevant text
+  //brochureText
 
-  //.......................
+  $("p.brochureText").on("click", function() {
+    $("section.galleryUSA").fadeOut("slow", "swing");
+    //$("section.destination").fadeIn("slow", "swing");
+    $("section.message").fadeIn("slow", "swing");
 
-  let usa = $("li.usa");
-  usa.on("click", function() {
-    console.log("clicked usa");
+    console.log("clicked");
   });
 
   //Our recent work section-----------------------------------
