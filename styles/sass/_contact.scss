@@ -2,3 +2,13 @@ section.message {
   display: none;
   padding-top: 100px;
 }
+
+.goBack.formPage {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  color: darkcyan;
+  margin: 0;
+  font-family: $secondaryFont;
+  font-size: 30px;
+}

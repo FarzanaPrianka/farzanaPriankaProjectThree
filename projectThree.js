@@ -1,38 +1,17 @@
-/**
- >For slideshow section:
-    >>each time the page refreshes, (initial HTML)
-        >>> set value of slideIndex to 1:  slideIndex = 1;
-        >>>call function for parameter 1 : slideShow(1);
-        >>>display of all div of class slides become none;
-        >>>display of div 1 become block
-    >> For pressing previous button 
-        >>>slideIndex become: slideIndex = slideIndex - 1;
-        >>>call slideShow function for new parameter;
-
-    >> For pressing next button
-        >>>slideIndex become: slideIndex = slideIndex + 1;
-        >>call slideShow function for new parameter;
- *  >>For pressing the thumbnail images
-        >>>slideIndex become: slideIndex = currentIndex;
-        >>call slideShow function for new parameter;
- */
-
 $(document).ready(function() {
   //initial landing page appear
   //when click on the arrow the full landing page disappear and introduction page pop up.
 
   $(".beginArrow").on("click", function() {
-    $(".fullLandingImage").fadeOut("slow", "swing");
-    $(".introduction").fadeIn("slow", "swing");
+    $(".fullLandingImage").fadeOut();
+    $(".introduction").fadeIn();
+  });
 
-    //$(".begin").fadeOut(1200, function() {
-    //   $(".begin").text("Take me there");
-    //  $(".begin").fadeIn("fast");
-    //});
+  //when click go back icon on intro page
 
-    //$(".begin").text("Take me there");
-
-    console.log("clicked");
+  $(".goBack.intro").on("click", function() {
+    $(".fullLandingImage").fadeIn();
+    $(".introduction").fadeOut();
   });
 
   //when mouseover the icon
@@ -52,9 +31,8 @@ $(document).ready(function() {
   //when click takeMeThere gallery shows up
 
   $("a.takeMeThere").on("click", function() {
-    $("section.introduction").fadeOut("slow", "swing");
-    //$("section.destination").fadeIn("slow", "swing");
-    $("section.galleryUSA").fadeIn("slow", "swing");
+    $("section.introduction").fadeOut();
+    $("section.galleryUSA").fadeIn();
 
     console.log("clicked");
   });
@@ -63,10 +41,21 @@ $(document).ready(function() {
 
   $("p.brochureText").on("click", function() {
     $("section.galleryUSA").fadeOut("slow", "swing");
-    //$("section.destination").fadeIn("slow", "swing");
     $("section.message").fadeIn("slow", "swing");
+  });
 
-    console.log("clicked");
+  //when .goBack.gallery is pressed
+
+  $(".goBack.gallery").on("click", function() {
+    $("section.galleryUSA").fadeOut();
+    $("section.introduction").fadeIn();
+  });
+
+  //goBack.formPage
+
+  $(".goBack.formPage").on("click", function() {
+    $("section.galleryUSA").fadeIn();
+    $("section.message").fadeOut();
   });
 
   //Our recent work section-----------------------------------
@@ -107,25 +96,21 @@ $(document).ready(function() {
   $(".thumbnailImage.two").on("click", function() {
     slideIndex = 2;
     slideShow(slideIndex);
-    console.log("clicked");
   });
 
   $(".thumbnailImage.three").on("click", function() {
     slideIndex = 3;
     slideShow(slideIndex);
-    console.log("clicked");
   });
 
   $(".thumbnailImage.four").on("click", function() {
     slideIndex = 4;
     slideShow(slideIndex);
-    console.log("clicked");
   });
 
   $(".thumbnailImage.five").on("click", function() {
     slideIndex = 5;
     slideShow(slideIndex);
-    console.log("clicked");
   });
 
   function slideShow(num) {
@@ -212,3 +197,22 @@ $(document).ready(function() {
   $("input.yourName:text").val("");
   $("input[name='mail']").val("");
 });
+
+/**
+ >For slideshow section:
+    >>each time the page refreshes, (initial HTML)
+        >>> set value of slideIndex to 1:  slideIndex = 1;
+        >>>call function for parameter 1 : slideShow(1);
+        >>>display of all div of class slides become none;
+        >>>display of div 1 become block
+    >> For pressing previous button
+        >>>slideIndex become: slideIndex = slideIndex - 1;
+        >>>call slideShow function for new parameter;
+
+    >> For pressing next button
+        >>>slideIndex become: slideIndex = slideIndex + 1;
+        >>call slideShow function for new parameter;
+ *  >>For pressing the thumbnail images
+        >>>slideIndex become: slideIndex = currentIndex;
+        >>call slideShow function for new parameter;
+ */

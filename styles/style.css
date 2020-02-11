@@ -369,6 +369,7 @@ p.introDetail {
   text-align: center;
   color: white;
   font-size: 20px;
+  line-height: 40px;
 }
 
 p.reasonHeading {
@@ -422,6 +423,15 @@ p.takeMeThere {
   transition: all 0.7s;
 }
 
+.goBack.intro .fa-arrow-alt-circle-left {
+  text-align: center;
+  font-size: 40px;
+  color: orangered;
+  padding-left: 20px;
+  position: absolute;
+  bottom: 20px;
+}
+
 section.destination {
   display: none;
 }
@@ -447,6 +457,7 @@ ul.destination {
 
 section.galleryUSA {
   display: none;
+  position: relative;
 }
 
 .slidesContainer {
@@ -513,9 +524,29 @@ p.brochureText {
   font-size: 30px;
 }
 
+.goBack.gallery {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  color: white;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
+
 section.message {
   display: none;
   padding-top: 100px;
+}
+
+.goBack.formPage {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  color: darkcyan;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
 }
 
 .chatWindow {

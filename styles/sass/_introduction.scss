@@ -25,6 +25,7 @@ p.introDetail {
   text-align: center;
   color: white;
   font-size: 20px;
+  line-height: 40px;
 }
 
 p.reasonHeading {
@@ -79,4 +80,13 @@ p.takeMeThere {
   color: white;
   font-size: 30px;
   transition: all 0.7s;
+}
+
+.goBack.intro .fa-arrow-alt-circle-left {
+  text-align: center;
+  font-size: 40px;
+  color: orangered;
+  padding-left: 20px;
+  position: absolute;
+  bottom: 20px;
 }
