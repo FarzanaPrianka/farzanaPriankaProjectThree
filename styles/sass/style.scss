@@ -9,20 +9,14 @@
 
 //---------------------------------------
 
-.formContainer {
-  // max-width: 300px;
-  // padding: 10px;
-  border: 1px solid red;
+.chatWindow {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.form-container textarea {
+div.name,
+div.email {
   width: 100%;
-  // padding: 15px;
-  // margin: 5px 0 22px 0;
-  // border: none;
-  // background: #f1f1f1;
-  // resize: none;
-  // min-height: 200px;
 }
 
 input[type="text"],
@@ -30,4 +24,47 @@ input[type="email"] {
   display: inline-block;
   width: 100%;
   border: 1px solid black;
+
+  font-size: 12px;
+  padding: 13px 8px;
+  margin: 0 auto 20px;
+  border: none;
+  color: darkcyan;
+}
+
+label {
+  color: darkcyan;
+  font-size: 30px;
+}
+
+button.submit {
+  display: block;
+  background-color: darkcyan;
+  color: whitesmoke;
+  text-transform: uppercase;
+  border: none;
+  padding: 15px 10px;
+  font-family: $secondaryFont;
+  font-size: 13px;
+  margin: 0 auto;
+  font-weight: 700;
+  width: 300px;
+}
+
+.requiredFields {
+  color: orangered;
+  font-size: 16px;
+  margin: 0 auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.displayText {
+  width: auto;
+  margin: 0 auto;
+  padding: 100px 0 60px;
+  font-family: $primaryFont;
+  color: white;
+  text-align: center;
+  font-size: 50px;
 }

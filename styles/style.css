@@ -274,9 +274,16 @@ body {
   padding: 0;
 }
 
+#particles-js {
+  height: 100%;
+}
+
 img {
   display: block;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 .wrapper {
@@ -286,7 +293,7 @@ img {
 
 header {
   height: 100vh;
-  background-image: url(images/backgroundImageInitialPage.jpeg);
+  background-image: url(images/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -368,6 +375,9 @@ p.reasonHeading {
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
+  border: 1px solid red;
+  border-radius: 50%;
+  width: 300px;
 }
 
 a.destinationIcon {
@@ -445,13 +455,16 @@ section.galleryUSA {
 
 .slides {
   display: none;
+  border: 100px solid white;
 }
 
 .previous,
 .next {
+  position: absolute;
+  top: 40%;
   width: auto;
   padding: 20px;
-  color: black;
+  color: red;
   font-size: 30px;
 }
 
@@ -461,12 +474,12 @@ section.galleryUSA {
 
 .previous:hover,
 .next:hover {
-  background-color: grey;
+  color: grey;
 }
 
 .imageCaptionContainer {
   text-align: center;
-  background-color: #222;
+  background-color: rgba(0, 139, 139, 0.8);
   padding: 2px 16px;
   color: white;
 }
@@ -492,9 +505,12 @@ section.galleryUSA {
 
 p.brochureText {
   text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: red;
+  background-color: rgba(0, 139, 139, 0.8);
+  padding: 30px 16px;
+  color: white;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
 }
 
 section.message {
@@ -502,11 +518,13 @@ section.message {
   padding-top: 100px;
 }
 
-.formContainer {
-  border: 1px solid red;
+.chatWindow {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.form-container textarea {
+div.name,
+div.email {
   width: 100%;
 }
 
@@ -515,4 +533,46 @@ input[type="email"] {
   display: inline-block;
   width: 100%;
   border: 1px solid black;
+  font-size: 12px;
+  padding: 13px 8px;
+  margin: 0 auto 20px;
+  border: none;
+  color: darkcyan;
+}
+
+label {
+  color: darkcyan;
+  font-size: 30px;
+}
+
+button.submit {
+  display: block;
+  background-color: darkcyan;
+  color: whitesmoke;
+  text-transform: uppercase;
+  border: none;
+  padding: 15px 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  margin: 0 auto;
+  font-weight: 700;
+  width: 300px;
+}
+
+.requiredFields {
+  color: orangered;
+  font-size: 16px;
+  margin: 0 auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.displayText {
+  width: auto;
+  margin: 0 auto;
+  padding: 100px 0 60px;
+  font-family: "Lora", serif;
+  color: white;
+  text-align: center;
+  font-size: 50px;
 }

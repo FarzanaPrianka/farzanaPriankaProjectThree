@@ -25,6 +25,7 @@
   <!-- body starts here------------------------------------------------------>
 
   <body>
+    <div id="particles-js"></div>
     <!-- Initial Landing Page -->
 
     <header>
@@ -47,7 +48,7 @@
             solutions for resorts and hotels.Currently we have 114 clients all
             over the world.
           </p>
-          <div class="destination">
+          <!-- <div class="destination">
             <a class="destinationIcon" href="#"
               ><i class="far fa-smile-beam"></i
             ></a>
@@ -59,7 +60,7 @@
               ><i class="fas fa-money-check-alt"></i
             ></a>
   
-            <p class="reasonHeading"></p>
+            <p class="reasonHeading"></p> -->
 
             <p class="takeMeThereContainer">
               <a class="takeMeThere" href="#"
@@ -70,17 +71,6 @@
           </div>
         </section>
         </div>
-
-        <!-- select your destination -->
-        
-        <section class="destination">
-          <ul class="destination">
-            <li class="usa">USA</li>
-            <li class="canada">Canada</li>
-            <li class="thailand">Thailand</li>
-            <li class="nepal">Nepal</li>
-          </ul>
-        </section>
 
         <!-- gallery  -->
 
@@ -140,7 +130,7 @@
 
           <div>
             <p class="brochureText">
-              Get a brochure to know more about us
+              Want to know more about us? >>>
             </p>
           </div>
         </section>
@@ -151,15 +141,21 @@
           <div class="chatWindow">
             <form action="#" method="#" class="formContainer">
               <!-- name -->
-              <label for="yourName">Your name</label>
-              <input type="text" class="yourName" />
-              <!-- email -->
-              <label for="yourEmail">Your email</label>
-              <input type="email" class="yourEmail" name="mail" />
+              <div class="formInput">
+                <div class="name">
+                  <label for="yourName">Your name</label>
+                  <input type="text" class="yourName" />
+                </div>
+                <!-- email -->
+                <div class="email">
+                  <label for="yourEmail">Your email</label>
+                  <input type="email" class="yourEmail" name="mail" />
+                </div>
+              </div>
         
               <!-- button -->
-              <button>Leave a message</button>
-              <span class="requiredFields"></span>
+              <button class="submit">Submit</button>
+              <div class="requiredFields"></div>
             </form>
             <p class="displayText"></p>
           </div>
@@ -167,19 +163,12 @@
 
 
     </header>
-
-    
-
-    
-
-    <!-- Contact window -------------------->
-
-    
-
+ 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
     <script type="text/javascript" src="projectThree.js"></script>
 
-    <script></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
