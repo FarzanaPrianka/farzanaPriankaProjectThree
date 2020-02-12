@@ -18,7 +18,7 @@ section.galleryUSA {
   top: 40%;
   width: auto;
   padding: 20px;
-  color: red;
+  color: darkcyan;
   font-size: 30px;
 }
 
@@ -33,9 +33,15 @@ section.galleryUSA {
 
 .imageCaptionContainer {
   text-align: center;
-  background-color: rgba($color: #008b8b, $alpha: 0.8);
-  padding: 2px 16px;
+  background-color: rgba($color: #008b8b, $alpha: 0.5);
+  padding: 50px 50px;
   color: white;
+  position: absolute;
+  font-family: $primaryFont;
+  font-size: 30px;
+
+  top: 50px;
+  left: 50px;
 }
 
 .thumbnailRow {
@@ -57,24 +63,49 @@ section.galleryUSA {
 
 p.brochureText {
   text-align: center;
-  background-color: rgba($color: #008b8b, $alpha: 0.8);
+  background-color: rgba($color: #008b8b, $alpha: 0.7);
   padding: 30px 16px;
+  color: white;
+  margin: 0;
+  font-family: $secondaryFont;
+  font-size: 20px;
+}
+
+.goBack.gallery {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
   color: white;
   margin: 0;
   font-family: $secondaryFont;
   font-size: 30px;
 }
 
-// div.brochureText {
-//   position: relative;
-// }
+@media (max-width: 1140px) {
+  .slides {
+    border: 60px solid white;
+  }
 
-.goBack.gallery {
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
-  color: white;
-  margin: 0;
-  font-family: $secondaryFont;
-  font-size: 30px;
+  .imageCaptionContainer {
+    font-size: 20px;
+    top: 30px;
+    left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .imageCaptionContainer {
+    padding: 30px;
+  }
+
+  .previous,
+  .next {
+    top: 30%;
+  }
+}
+
+@media (max-width: 550px) {
+  .imageCaptionContainer {
+    padding: 20px;
+  }
 }

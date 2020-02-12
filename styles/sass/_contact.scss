@@ -12,3 +12,74 @@ section.message {
   font-family: $secondaryFont;
   font-size: 30px;
 }
+
+//---------------------------------------
+
+.chatWindow {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+div.name,
+div.email {
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"] {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid black;
+  padding: 13px 8px;
+  margin: 0 auto 20px;
+  border: none;
+  color: darkcyan;
+}
+
+label {
+  color: darkcyan;
+
+  text-align: center;
+}
+
+button.submit {
+  display: block;
+  background-color: darkcyan;
+  color: whitesmoke;
+  text-transform: uppercase;
+  border: none;
+  padding: 15px 10px;
+  font-family: $secondaryFont;
+  font-size: 13px;
+  margin: 0 auto;
+  font-weight: 700;
+  width: 300px;
+}
+
+.requiredFields {
+  color: orangered;
+  font-size: 16px;
+  margin: 0 auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.displayText {
+  width: auto;
+  margin: 0 auto;
+  padding: 100px 0 60px;
+  font-family: $primaryFont;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.registration {
+  width: auto;
+  margin: 0 auto;
+  padding: 10px 0 60px;
+  font-family: $primaryFont;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}

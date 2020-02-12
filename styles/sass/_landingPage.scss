@@ -9,7 +9,7 @@ header {
 h1 {
   width: auto;
   margin: 0 auto;
-  padding: 200px 0 100px;
+  padding-top: 20%;
   font-family: $primaryFont;
   color: white;
   text-align: center;
@@ -40,3 +40,14 @@ p.beginArrow {
   font-size: 30px;
   transition: all 0.7s;
 }
+
+//responsive design
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+    padding-top: 18%;
+  }
+}
+
+

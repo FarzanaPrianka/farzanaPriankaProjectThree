@@ -14,34 +14,18 @@ $(document).ready(function() {
     $(".introduction").fadeOut();
   });
 
-  //when mouseover the icon
-
-  let destinationIcon = $("a.destinationIcon");
-  let destination = ["USA", "Canada", "Thailand", "Nepal"];
-
-  destinationIcon.each(function(index) {
-    $(this).on("mouseover", function() {
-      $("p.reasonHeading").text(destination[index]);
-    });
-    $(this).on("mouseout", function() {
-      $("p.reasonHeading").text("");
-    });
-  });
-
   //when click takeMeThere gallery shows up
 
   $("a.takeMeThere").on("click", function() {
     $("section.introduction").fadeOut();
     $("section.galleryUSA").fadeIn();
-
-    console.log("clicked");
   });
 
   //brochureText
 
   $("p.brochureText").on("click", function() {
-    $("section.galleryUSA").fadeOut("slow", "swing");
-    $("section.message").fadeIn("slow", "swing");
+    $("section.galleryUSA").fadeOut();
+    $("section.message").fadeIn();
   });
 
   //when .goBack.gallery is pressed
@@ -58,11 +42,11 @@ $(document).ready(function() {
     $("section.message").fadeOut();
   });
 
-  //Our recent work section-----------------------------------
+  //slideshow section-----------------------------------
 
   let slideIndex = 1;
   let captionText = [
-    "Lorem Museum",
+    "Samui Resort",
     "Apple Inc",
     "Mansion @ Davisville",
     "Chandler's Living Room",
@@ -198,7 +182,7 @@ $(document).ready(function() {
   $("input[name='mail']").val("");
 });
 
-/**
+/**pseudocode
  >For slideshow section:
     >>each time the page refreshes, (initial HTML)
         >>> set value of slideIndex to 1:  slideIndex = 1;
