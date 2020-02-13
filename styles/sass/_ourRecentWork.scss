@@ -39,7 +39,6 @@ section.galleryUSA {
   position: absolute;
   font-family: $primaryFont;
   font-size: 30px;
-
   top: 50px;
   left: 50px;
 }
@@ -80,6 +79,8 @@ p.brochureText {
   font-family: $secondaryFont;
   font-size: 30px;
 }
+
+//responsive design
 
 @media (max-width: 1140px) {
   .slides {

@@ -14,6 +14,25 @@ $(document).ready(function() {
     $(".introduction").fadeOut();
   });
 
+  ////when mouseover the icon
+
+  let reason = $("a.reason");
+  let reasonAnswer = [
+    "We are friendly",
+    "We feature simplicity",
+    "We are affordable",
+    "We are honest"
+  ];
+
+  reason.each(function(index) {
+    $(this).on("mouseover", function() {
+      $("p.reasonTag").text(reasonAnswer[index]);
+    });
+    $(this).on("mouseout", function() {
+      $("p.reasonTag").text("Why Choose US");
+    });
+  });
+
   //when click takeMeThere gallery shows up
 
   $("a.takeMeThere").on("click", function() {
@@ -173,7 +192,7 @@ $(document).ready(function() {
       );
     } else if (userName == "" || userEmail == "") {
       console.log("please enter required fields");
-      $(".requiredFields").text("please enter required fields");
+      $(".requiredFields").text("Please enter required fields");
     }
   });
 

@@ -274,10 +274,6 @@ body {
   padding: 0;
 }
 
-#particles-js {
-  height: 100%;
-}
-
 img {
   display: block;
   width: 100%;
@@ -342,12 +338,6 @@ p.beginArrow {
   }
 }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 70px;
-  }
-}
-
 section.introduction {
   display: none;
 }
@@ -368,7 +358,7 @@ div.wrapper.introduction {
 h2.introduction {
   width: auto;
   margin: 0 auto;
-  padding: 100px 0 60px;
+  padding: 60px 0 30px;
   font-family: "Lora", serif;
   color: white;
   text-align: center;
@@ -432,6 +422,52 @@ p.takeMeThere {
   bottom: 20px;
 }
 
+.whyChooseUs {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 200px;
+  position: relative;
+  border-radius: 50%;
+  margin: 60px auto 60px;
+  font-size: bold;
+  padding: 50px;
+}
+
+.reasonTag {
+  color: white;
+  font-size: 30px;
+  font-family: "Lora", serif;
+  text-align: center;
+}
+
+.reason {
+  font-size: 16px;
+  color: white;
+}
+
+.reason.one {
+  position: absolute;
+  top: 80px;
+  left: -8px;
+}
+
+.reason.two {
+  position: absolute;
+  top: 80px;
+  right: -8px;
+}
+
+.reason.three {
+  position: absolute;
+  top: -12px;
+  left: 135px;
+}
+
+.reason.four {
+  position: absolute;
+  bottom: -12px;
+  left: 135px;
+}
+
 @media (max-width: 940px) {
   .fa-arrow-down.two {
     padding: 10px 0 10px;
@@ -454,27 +490,14 @@ p.takeMeThere {
   }
 }
 
-section.destination {
-  display: none;
-}
-
-ul.destination {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  list-style: none;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 50%;
-  font-size: 30px;
+@media (max-width: 500px) {
+  .whyChooseUs {
+    width: 185px;
+    padding: 46px;
+  }
+  .reasonTag {
+    font-size: 20px;
+  }
 }
 
 section.galleryUSA {
@@ -669,63 +692,4 @@ button.submit {
   color: white;
   text-align: center;
   font-size: 40px;
-}
-
-.chatWindow {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-div.name,
-div.email {
-  width: 100%;
-}
-
-input[type="text"],
-input[type="email"] {
-  display: inline-block;
-  width: 100%;
-  border: 1px solid black;
-  font-size: 12px;
-  padding: 13px 8px;
-  margin: 0 auto 20px;
-  border: none;
-  color: darkcyan;
-}
-
-label {
-  color: darkcyan;
-  font-size: 30px;
-}
-
-button.submit {
-  display: block;
-  background-color: darkcyan;
-  color: whitesmoke;
-  text-transform: uppercase;
-  border: none;
-  padding: 15px 10px;
-  font-family: "Roboto", sans-serif;
-  font-size: 13px;
-  margin: 0 auto;
-  font-weight: 700;
-  width: 300px;
-}
-
-.requiredFields {
-  color: orangered;
-  font-size: 16px;
-  margin: 0 auto;
-  padding-top: 100px;
-  text-align: center;
-}
-
-.displayText {
-  width: auto;
-  margin: 0 auto;
-  padding: 100px 0 60px;
-  font-family: "Lora", serif;
-  color: white;
-  text-align: center;
-  font-size: 50px;
 }

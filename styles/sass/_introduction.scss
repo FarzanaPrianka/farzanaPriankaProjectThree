@@ -11,7 +11,7 @@ div.wrapper.introduction {
 h2.introduction {
   width: auto;
   margin: 0 auto;
-  padding: 100px 0 60px;
+  padding: 60px 0 30px;
   font-family: $primaryFont;
   color: white;
   text-align: center;
@@ -76,6 +76,54 @@ p.takeMeThere {
   bottom: 20px;
 }
 
+//why choose us
+
+.whyChooseUs {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 200px;
+  position: relative;
+  border-radius: 50%;
+  margin: 60px auto 60px;
+  font-size: bold;
+  padding: 50px;
+}
+
+.reasonTag {
+  color: white;
+  font-size: 30px;
+  font-family: $primaryFont;
+  text-align: center;
+}
+
+.reason {
+  font-size: 16px;
+  color: white;
+}
+
+.reason.one {
+  position: absolute;
+  top: 80px;
+  left: -8px;
+}
+
+.reason.two {
+  position: absolute;
+  top: 80px;
+  right: -8px;
+}
+
+.reason.three {
+  position: absolute;
+  top: -12px;
+  left: 135px;
+}
+
+.reason.four {
+  position: absolute;
+  bottom: -12px;
+  left: 135px;
+}
+
 //responsive design
 
 @media (max-width: 940px) {
@@ -102,5 +150,16 @@ p.takeMeThere {
 
   .goBack.intro .fa-arrow-alt-circle-left {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .whyChooseUs {
+    width: 185px;
+    padding: 46px;
+  }
+
+  .reasonTag {
+    font-size: 20px;
   }
 }
